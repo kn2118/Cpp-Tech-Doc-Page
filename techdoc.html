@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="techdoc_styles.css">
+    <title>C++ Documentation</title>
+</head>
+  
+  <main id = "main-doc">
+
+    <h1 id = "title">C++ Documentation
+        <p class = "update-info">Last Updated: 12/29/2021</p>
+      </h1>
+
+    <nav id = "navbar">
+      <div id = "menu">
+          <header id = "menu-text">Menu</header>
+      </div>
+      <div class = "nav-box" >
+        <a href = "#Libraries" class = "nav-link">Libraries</a>
+      </div>
+      <div class = "nav-box">
+        <a href = "#Static Typing" class = "nav-link">Static Typing</a>
+      </div>
+      <div class = "nav-box">
+        <a href = "#If Statements" class = "nav-link">If Statements</a>
+      </div>
+      <div class = "nav-box">
+        <a href = "#Loops" class = "nav-link">Loops</a>
+      </div>
+      <div class = "nav-box">
+        <a href = "#function" class = "nav-link" >Function</a>
+      </div>
+      <div id = "last-nav"></div>
+    </nav>
+  
+    <section class = "main-section" id = "Libraries">
+      <header><h2>Libraries<h2></header>
+        <h3>What are Libraries?</h3>
+        <p>Libraries provide useful and efficient tools for programming.</p>
+        <h3>List of C++ Libraries:</h3>
+        <ul>
+          <li> iostream </li>
+          <li> fstream </li>
+          <li> vector </li>
+          <li> string </li>
+          <li> STL </li>
+        </ul>
+        <h3>How to Import a Library:</h3>
+        <code> #include "iostream" <br></code>
+        <p>The library iostream allows the code to print onto and take inputs from the console.</p>
+      </section>
+        
+      <section class = "main-section" id = "Static Typing">
+      <header><h2>Static Typing</h2><header>
+        <h3>What is Static Typing?</h3>
+        <p>In C++, a data type declaration is required to instantiate a variable.</p>
+        <h3>Examples of Static Typing:</h3>
+        <code class = "tab"> int x = 10; </code> <br>
+        <code class = "tab"> double d = 10.0; </code> <br> 
+        <code class = "tab"> string s = "Hello World"; </code> <br>
+        <code class = "tab"> char c = 'p'; </code> 
+        <h3>Benefits:</h3>
+        <p> Static Typing allows the compiler to catch compilation errors at compilation time instead of runtime. In short, error finding is faster. </p>
+      </section>
+        
+      <section class = "main-section" id = "If Statements"> 
+        <header><h2>If Statements</h2><header>
+        <h3>What are if statements?</h3>
+        <p>If statements serve to impose a condition before running a piece of code. C++ if statements are also syntactically similar to Java and Python. </p>
+        <code>if (credit_score > 700) { borrow(); }</code>
+        <p>The statement above translates: if your credit score is above 700, you can borrow money using the borrow <a href = "#function">function</a>.</p>
+        <h3>Benefits:</h3>
+        <p>If statements are very useful for checking if something is true.</p>
+      </section>
+       
+      <section class = "main-section" id = "Loops">
+        <header><h2>Loops</h2><header>
+        <h3>What are loops?</h3>
+        <p>Loops continously repeat a segment of code. C++ loops are also syntactically similar to Java and Python.</p>
+        <h3>Type of loops</h3>
+        <li>For Loop</li>
+        <p>For loops works by iterating from a beginning to an end value.</p>
+        <code>for(int index = 0; index < total; index++) { doSomething(); }</code>
+        <p>In this example, the iterator (the value that gets incremented from every loop iteration) begins at 0 and increments by 1 continously until it reaches the end. For each incrementation, the loop performs whatever is defined between the brackets. </p>
+        <li>While Loop</li>
+        <p>While loops will continuously run whatever is defined in the brackets as long as its conditional statement in parenthesis is true. </p>
+        <code>while(merchandise_count < 100) {merchandise_count++;}</code>
+        <p>In the example above, the while loop stockpiles the merchandise by 1 as long as the number of merchandises is less than 100.</p>
+        <li>Ranged For Loop</li>
+        <p>Ranged for loops works by looping a segment a code as long as it can still read from an object.</p>
+        <code>for(int price: receipt) { total_price += price;}</code>
+        <p>In the example above, as long as the loop is reading a price from the receipt, it will add the price to the total price. When it reaches the end of the receipt, the loop will terminate. </p>
+      </section>
+          
+      <section class = "main-section" id = "function">
+        <header><h2 id = "function">Function</h2></header>
+        <p>Dealing with large batches of code can be overwhelming. Functions can help organize and simplify your code.</p>
+        <p>A function is like a mathematical function where it takes in inputs and outputs something. It is important to define the return type of a function before defining the function (e.g void, int, double, etc.). Then, you will need to provide a function name that makes sense (what the function is doing). Every function should be able to take in parameters, by definition of functions. So, after the function name, the () operator follows and should take in parameters. Finally, the code that the function runs should follow and be encapsulated within brackets. <p>
+        <code>
+           int main() { <br>
+           int merchandise_count = 0; <br>
+           while (merchandise_count < 100) { merchandise_count++;}<br>
+           cout << "merchandise count" << merchandise_count; <br>
+           }
+        </code><br>
+        <code>
+           int fill_merchandise(int num_merchandise){<br>
+           while (num_merchandise < 100) {num_merchandise++;}<br>
+           return num_merchandise; <br>
+           }<br>                                
+           int main() {<br>
+           int merchandise_count = 0; <br>
+           cout << "merchandise count" << fill_merchandise(merchandise_count);     <br>    
+           }
+        </code>
+          <p>In main(), the number of lines of code has decreased. This makes our code readable because we pushed away how the stockpiling works to a function.</p>
+      </section>
+          
+    </main>
+     
+    </html>
+  
+  

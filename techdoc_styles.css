@@ -1,0 +1,89 @@
+body{
+    font-family: Garamond; 
+  }
+  #title{
+    background-color: grey; 
+    position: relative;
+    right: -250px; 
+    width: 1061px; 
+  }
+  .update-info{
+    font-size: 12px; 
+    float: right; 
+    padding: 5px;
+  }
+  #navbar{
+    position: fixed; 
+    display: flex; 
+    flex-direction: column;
+    top: 0px; 
+  }
+  #menu{
+    border-color: black; 
+    border-width: 2px; 
+    border-right: solid;
+    border-bottom: solid; 
+  }
+  #menu-text{
+    color: black;
+    font-size: 35px; 
+    text-align:center;
+    text-align: bottom; 
+  }
+  .nav-link{
+    text-decoration: none; 
+    color: black; 
+    font-size: 30px;
+  }
+  .nav-link:hover{
+    color: white; 
+  }
+  .nav-box {
+    width: 200px; 
+    border-color: black; 
+    border-width: 3px; 
+    border-right: solid; 
+    border-bottom: solid; 
+  }
+  .nav-box:hover{
+    background-color:black;
+  }
+  #last-nav{
+    border-color: black; 
+    border-right: solid;
+    height: 1000px; 
+  }
+  
+  .main-section{
+    position: relative; 
+    right: -250px; 
+    display: flex; 
+    flex-direction: column; 
+    width: 1061px; 
+  }
+  h2{
+    background-color: #b4b4b4; 
+    max-width: 100%;
+  }
+  p{
+    max-width: 1061px; 
+  }
+  code {
+    font-family: monospace;
+    color: black; 
+    max-height: 100%; 
+    width: 500px; 
+  }
+  .tab {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 414px){
+    #navbar{
+      display: none;
+    }
+    body{
+     right: 0px; 
+    }
+  }
